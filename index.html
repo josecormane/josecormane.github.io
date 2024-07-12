@@ -11,10 +11,63 @@
             width: 100%;
             height: 100%;
             overflow: auto;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            border-top: 1px solid #e9ecef;
+        }
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+        footer .footer-content .footer-section {
+            flex: 1;
+            padding: 0 10px;
+        }
+        footer .footer-content .footer-section h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        footer .footer-content .footer-section p,
+        footer .footer-content .footer-section a {
+            font-size: 14px;
+            color: #6c757d;
+            text-decoration: none;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding-top: 20px;
+        }
+        .sidebar {
+            width: 10%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            color: #f0f0f0; /* Color casi blanco */
+            font-size: 16px; /* Tamaño de fuente pequeño */
+            text-align: center;
+        }
+        .main-content {
+            width: 80%;
+            padding: 10px;
         }
         .image-container {
             width: 100%;
-            height: 100%;
         }
         .image-container img {
             width: 100%;
@@ -29,10 +82,31 @@
     </style>
 </head>
 <body>
-    <div class="text-banner">únete</div>
-    <div class="image-container">
-        <img src="screenshot.png" alt="Imagen Alargada">
+    <header>
+        <nav>Menú</nav>
+    </header>
+    <div class="content">
+        <div class="sidebar">MisterIA</div>
+        <div class="main-content">
+            <div class="text-banner">únete</div>
+            <div class="image-container">
+                <img src="screenshot.png" alt="Imagen Alargada">
+            </div>
+            <div class="text-banner">únete</div>
+        </div>
     </div>
-    <div class="text-banner">únete</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Información de Contacto</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
